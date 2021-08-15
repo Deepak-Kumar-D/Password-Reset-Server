@@ -40,7 +40,7 @@ passRouter.post("/forgotpassword", async (req, res) => {
         to: email,
         subject: "Password Reset",
         html: `<p>Hi User,</p>\n
-          <h3>Click <a href="http://localhost:3000/resetpassword/${token}">here</a> to reset your password.</h3>\n
+          <h3>Click <a href="https://react-password-reset.netlify.app/resetpassword/${token}">here</a> to reset your password.</h3>\n
           <p style="margin: 0;">Regards,</p>\n
           <p style="margin: 0;">Password Reset App</p>`,
       };
