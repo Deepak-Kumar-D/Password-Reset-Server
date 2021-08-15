@@ -51,7 +51,7 @@ router.post("/login", async (req, res) => {
       }
     }
   } catch (err) {
-    res.send(err);
+    res.status(422).json({ error: err });
   }
 });
 
